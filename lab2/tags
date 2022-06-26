@@ -1,0 +1,196 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BY2PG	include/mmu.h	11;"	d
+CC	include.mk	/^CC     := $(CROSS)gcc/;"	m
+CFLAGS	include.mk	/^CFLAGS := -Wall -ffreestanding$/;"	m
+CROSS	include.mk	/^CROSS  := \/home\/wsmitpwtind\/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf\/bin\/aarch64-none-elf-$/;"	m
+Ctod	lib/print.c	16;"	d	file:
+E_BAD_ENV	include/error.h	8;"	d
+E_BAD_PATH	include/error.h	20;"	d
+E_FILE_EXISTS	include/error.h	21;"	d
+E_INVAL	include/error.h	10;"	d
+E_IPC_NOT_RECV	include/error.h	14;"	d
+E_MAX_OPEN	include/error.h	18;"	d
+E_NOT_EXEC	include/error.h	22;"	d
+E_NOT_FOUND	include/error.h	19;"	d
+E_NO_DISK	include/error.h	17;"	d
+E_NO_FREE_ENV	include/error.h	12;"	d
+E_NO_MEM	include/error.h	11;"	d
+E_UNSPECIFIED	include/error.h	7;"	d
+GPFSEL1	boot/vm.c	82;"	d	file:
+GPPUD	boot/vm.c	83;"	d	file:
+GPPUDCLK0	boot/vm.c	84;"	d	file:
+INCLUDES	boot/Makefile	/^INCLUDES := -I..\/include$/;"	m
+INCLUDES	drivers/Makefile	/^INCLUDES := -I..\/include$/;"	m
+INCLUDES	init/Makefile	/^INCLUDES := -I..\/include$/;"	m
+INCLUDES	lib/Makefile	/^INCLUDES := -I..\/include$/;"	m
+IsDigit	lib/print.c	15;"	d	file:
+KADDR	include/mmu.h	26;"	d
+KERNBASE	include/mmu.h	41;"	d
+KERNEL_BASE_PA	include/mmu.h	33;"	d
+KERNEL_ENVS	include/mmu.h	38;"	d
+KERNEL_ENVS_PA	include/mmu.h	30;"	d
+KERNEL_LIMIT_PA	include/mmu.h	28;"	d
+KERNEL_PAGES	include/mmu.h	39;"	d
+KERNEL_PAGES_PA	include/mmu.h	31;"	d
+KERNEL_PGDIR	include/mmu.h	40;"	d
+KERNEL_PGDIR_PA	include/mmu.h	32;"	d
+KERNEL_STACK_PA	include/mmu.h	34;"	d
+KERNEL_TSTOP_PA	include/mmu.h	29;"	d
+KSTACKTOP	include/mmu.h	42;"	d
+KTOP	include/mmu.h	36;"	d
+LIST_EMPTY	include/queue.h	82;"	d
+LIST_ENTRY	include/queue.h	69;"	d
+LIST_FIRST	include/queue.h	87;"	d
+LIST_FOREACH	include/queue.h	94;"	d
+LIST_HEAD	include/queue.h	49;"	d
+LIST_HEAD_INITIALIZER	include/queue.h	58;"	d
+LIST_INIT	include/queue.h	102;"	d
+LIST_INSERT_AFTER	include/queue.h	111;"	d
+LIST_INSERT_BEFORE	include/queue.h	124;"	d
+LIST_INSERT_HEAD	include/queue.h	135;"	d
+LIST_NEXT	include/queue.h	142;"	d
+LIST_REMOVE	include/queue.h	148;"	d
+LP_MAX_BUF	include/print.h	18;"	d
+MAXERROR	include/error.h	24;"	d
+MAXPA	include/mmu.h	8;"	d
+MBOX_READ	boot/vm.c	62;"	d	file:
+MBOX_STATUS	boot/vm.c	63;"	d	file:
+MBOX_WRITE	boot/vm.c	64;"	d	file:
+MIN	include/types.h	27;"	d
+NULL	include/types.h	24;"	d
+OSLABPI_MMU_H	include/mmu.h	2;"	d
+OSLABPI_PMAP_H	include/pmap.h	2;"	d
+OSLABPI_TYPE_H	include/types.h	2;"	d
+OSLABPI_UART_H	include/uart.h	2;"	d
+OUTPUT	lib/print.c	36;"	d	file:
+PDMAP	include/mmu.h	12;"	d
+PDSHIFT	include/mmu.h	13;"	d
+PDX	include/mmu.h	17;"	d
+PGSHIFT	include/mmu.h	15;"	d
+PMSHIFT	include/mmu.h	14;"	d
+PMX	include/mmu.h	18;"	d
+PPN	include/mmu.h	23;"	d
+PTE_4KB	include/mmu.h	53;"	d
+PTE_ADDR	include/mmu.h	21;"	d
+PTE_AF	include/mmu.h	58;"	d
+PTE_DEVICE	include/mmu.h	50;"	d
+PTE_INNER_SHARE	include/mmu.h	62;"	d
+PTE_KERN	include/mmu.h	54;"	d
+PTE_NON_CACHE	include/mmu.h	51;"	d
+PTE_NORMAL	include/mmu.h	49;"	d
+PTE_OUTER_SHARE	include/mmu.h	61;"	d
+PTE_PXN	include/mmu.h	59;"	d
+PTE_RO	include/mmu.h	57;"	d
+PTE_RW	include/mmu.h	56;"	d
+PTE_USER	include/mmu.h	55;"	d
+PTE_UXN	include/mmu.h	60;"	d
+PTX	include/mmu.h	19;"	d
+Page	include/pmap.h	/^struct Page {$/;"	s
+Page_LIST_entry_t	include/pmap.h	/^typedef LIST_ENTRY(Page) Page_LIST_entry_t;$/;"	t
+Pde	include/mmu.h	/^typedef u_long Pde;$/;"	t
+Pme	include/mmu.h	/^typedef u_long Pme;$/;"	t
+PrintChar	lib/print.c	/^PrintChar(char *buf, char c, int length, int ladjust)$/;"	f
+PrintNum	lib/print.c	/^PrintNum(char *buf, unsigned long u, int base, int negFlag,$/;"	f
+PrintString	lib/print.c	/^PrintString(char *buf, char *s, int length, int ladjust)$/;"	f
+Pte	include/mmu.h	/^typedef u_long Pte;$/;"	t
+ROUND	include/types.h	40;"	d
+ROUNDDOWN	include/types.h	41;"	d
+TAILQ_ENTRY	include/queue.h	164;"	d
+TAILQ_HEAD	include/queue.h	158;"	d
+TIMESTACKTOP	include/mmu.h	37;"	d
+UART0_CR	boot/vm.c	80;"	d	file:
+UART0_DR	boot/vm.c	85;"	d	file:
+UART0_DR_KERN	drivers/uart.c	3;"	d	file:
+UART0_FBRD	boot/vm.c	78;"	d	file:
+UART0_FR	boot/vm.c	86;"	d	file:
+UART0_FR_KERN	drivers/uart.c	4;"	d	file:
+UART0_IBRD	boot/vm.c	77;"	d	file:
+UART0_ICR	boot/vm.c	81;"	d	file:
+UART0_LCRH	boot/vm.c	79;"	d	file:
+UENVS	include/mmu.h	46;"	d
+UPAGES	include/mmu.h	47;"	d
+USTACKTOP	include/mmu.h	45;"	d
+UTOP	include/mmu.h	44;"	d
+VPN	include/mmu.h	24;"	d
+_ERROR_H_	include/error.h	4;"	d
+_SYS_QUEUE_H_	include/queue.h	2;"	d
+_el1_start	boot/start.S	/^_el1_start:$/;"	l
+_panic	lib/printf.c	/^_panic(const char *file, int line, const char *fmt,...)$/;"	f
+_print_h_	include/print.h	13;"	d
+_printf_h_	include/printf.h	13;"	d
+_start	boot/start.S	/^_start:$/;"	l
+assert	include/mmu.h	68;"	d
+bcopy	lib/pmap.c	/^void bcopy(const void *src, void *dst, size_t len) {$/;"	f
+boot_alloc	boot/vm.c	/^static void *boot_alloc(u_int n, u_int align, int clear) {$/;"	f	file:
+boot_bzero	boot/vm.c	/^void boot_bzero(void *b, size_t len) {$/;"	f
+boot_dir	Makefile	/^boot_dir      := boot$/;"	m
+boot_map_segment	boot/vm.c	/^void boot_map_segment(Pde *pgdir, u_long va, u_long size, u_long pa, int perm) {$/;"	f
+boot_pgdir_walk	boot/vm.c	/^static Pte *boot_pgdir_walk(u_long *pgdir, u_long va) {$/;"	f	file:
+bzero	lib/pmap.c	/^void bzero(void* b, size_t len) {$/;"	f
+drivers_dir	Makefile	/^drivers_dir   := drivers$/;"	m
+freemem	boot/vm.c	/^u_long freemem;$/;"	v
+init_dir	Makefile	/^init_dir      := init$/;"	m
+int16_t	include/types.h	/^typedef signed short int16_t;$/;"	t
+int32_t	include/types.h	/^typedef signed int int32_t;$/;"	t
+int64_t	include/types.h	/^typedef signed long int64_t;$/;"	t
+lib_dir	Makefile	/^lib_dir       := lib$/;"	m
+link_script	Makefile	/^link_script   := kernel.lds$/;"	m
+lp_Print	lib/print.c	/^lp_Print(void (*output)(void *, char *, int),$/;"	f
+main	init/main.c	/^void main() {$/;"	f
+map_segment	lib/pmap.c	/^void map_segment(Pde *pgdir, u_long va, u_long size, u_long pa, int perm) {$/;"	f
+mbox	boot/vm.c	/^volatile unsigned int __attribute__((aligned(16))) mbox[36];$/;"	v
+mbox_call	boot/vm.c	/^int mbox_call(unsigned char ch) {$/;"	f
+mm_dir	Makefile	/^mm_dir        := mm$/;"	m
+modules	Makefile	/^modules       := boot drivers init lib$/;"	m
+myoutput	lib/printf.c	/^static void myoutput(void *arg, char *s, int l)$/;"	f	file:
+objects	Makefile	/^objects       := $(boot_dir)\/*.o \\$/;"	m
+offsetof	include/types.h	37;"	d
+pa2page	include/pmap.h	/^static inline struct Page *pa2page(u_long pa) {$/;"	f
+page2kva	include/pmap.h	/^static inline u_long page2kva(struct Page *pp) {$/;"	f
+page2pa	include/pmap.h	/^static inline u_long page2pa(struct Page *pp) {$/;"	f
+page2ppn	include/pmap.h	/^static inline u_long page2ppn(struct Page *pp) {$/;"	f
+page_alloc	lib/pmap.c	/^int page_alloc(struct Page **pp) {$/;"	f
+page_decref	lib/pmap.c	/^void page_decref(struct Page *pp) {$/;"	f
+page_free	lib/pmap.c	/^void page_free(struct Page *pp) {$/;"	f
+page_free_list	lib/pmap.c	/^static struct Page_list page_free_list;$/;"	v	typeref:struct:Page_list	file:
+page_init	lib/pmap.c	/^void page_init(void) {$/;"	f
+page_insert	lib/pmap.c	/^int page_insert(Pde *pgdir, struct Page *pp, u_long va, u_int perm) {$/;"	f
+page_lookup	lib/pmap.c	/^struct Page *page_lookup(Pde *pgdir, u_long va, Pte **ppte) {$/;"	f
+page_remove	lib/pmap.c	/^void page_remove(Pde *pgdir, u_long va) {$/;"	f
+pages	lib/pmap.c	/^struct Page *pages = (struct Page *)KERNEL_PAGES;$/;"	v	typeref:struct:Page
+panic	include/printf.h	21;"	d
+pgdir_walk	lib/pmap.c	/^int pgdir_walk(Pde *pgdir, u_long va, int create, Pte **ppte) {$/;"	f
+pp_link	include/pmap.h	/^    Page_LIST_entry_t pp_link;$/;"	m	struct:Page
+pp_ref	include/pmap.h	/^    u_short pp_ref;$/;"	m	struct:Page
+printf	lib/printf.c	/^void printf(char *fmt, ...)$/;"	f
+set_ttbr0	lib/asm.S	/^set_ttbr0:$/;"	l
+size_t	include/types.h	/^typedef unsigned long long size_t;$/;"	t
+static_assert	include/types.h	35;"	d
+theFatalMsg	lib/print.c	/^static const char theFatalMsg[] = "fatal error in lp_Print!";$/;"	v	file:
+tlb_invalidate	lib/asm.S	/^tlb_invalidate:$/;"	l
+u16	include/types.h	/^typedef	unsigned short u16;$/;"	t
+u32	include/types.h	/^typedef unsigned int u32;$/;"	t
+u64	include/types.h	/^typedef unsigned long u64;$/;"	t
+u8	include/types.h	/^typedef unsigned char u8;$/;"	t
+u_char	include/types.h	/^typedef	unsigned char	u_char;$/;"	t
+u_int	include/types.h	/^typedef	unsigned int	u_int;$/;"	t
+u_int16_t	include/types.h	/^typedef unsigned short u_int16_t;$/;"	t
+u_int32_t	include/types.h	/^typedef unsigned int u_int32_t;$/;"	t
+u_int64_t	include/types.h	/^typedef unsigned long u_int64_t;$/;"	t
+u_long	include/types.h	/^typedef	unsigned long	u_long;$/;"	t
+u_short	include/types.h	/^typedef	unsigned short	u_short;$/;"	t
+uart_getc	boot/vm.c	/^char uart_getc() {$/;"	f
+uart_getc_kern	drivers/uart.c	/^char uart_getc_kern() {$/;"	f
+uart_hex	boot/vm.c	/^void uart_hex(unsigned int d) {$/;"	f
+uart_init	boot/vm.c	/^void uart_init() {$/;"	f
+uart_puts	boot/vm.c	/^void uart_puts(char *s) {$/;"	f
+uart_send	boot/vm.c	/^void uart_send(unsigned int c) {$/;"	f
+uart_send_kern	drivers/uart.c	/^void uart_send_kern(unsigned int c) {$/;"	f
+vm_init	boot/vm.c	/^void vm_init() {$/;"	f
+vmlinux_elf	Makefile	/^vmlinux_elf   := kernel.elf$/;"	m
+vmlinux_img	Makefile	/^vmlinux_img   := kernel8.img$/;"	m

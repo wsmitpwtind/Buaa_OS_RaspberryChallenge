@@ -11,7 +11,7 @@
 
 #include <printf.h>
 #include <print.h>
-#include <drivers/include/uart.h>
+#include <uart.h>
 
 void halt(void);
 

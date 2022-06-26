@@ -1,4 +1,5 @@
 #include "pmap.h"
+Pde *boot_pgdir;
 struct Page *pages = (struct Page *)KERNEL_PAGES;
 static struct Page_list page_free_list;
 

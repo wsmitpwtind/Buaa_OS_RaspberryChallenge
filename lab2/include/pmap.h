@@ -7,8 +7,6 @@
 #include "printf.h"
 #include "error.h"
 
-Pde *boot_pgdir;
-
 LIST_HEAD(Page_list, Page);
 typedef LIST_ENTRY(Page) Page_LIST_entry_t;
 struct Page {
