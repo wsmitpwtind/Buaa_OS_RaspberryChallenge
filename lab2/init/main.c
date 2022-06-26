@@ -1,13 +1,15 @@
 #include <printf.h>
-#include <pmap.h>
-#include <uart.h>
+#include <drivers/include/uart.h>
 
 void main() {
-    printf("mmu started!\n");
-    page_init();
-    printf("page_init ok!\n");
+    uart_init();
+    printf("System started!\n");
+    printf("This is lab1 for kezhang, xingyang huang, zichuan zheng\n");
+    int test = 3;
+    printf("Bock1<>\n %d %d",test ,test);
     while (1) {
-        char c = uart_getc_kern();
-        uart_send_kern(c);
+        char c = uart_getc();
+	printf("%c",c);
     }
 }
+

@@ -11,7 +11,7 @@
 
 #include <printf.h>
 #include <print.h>
-#include <uart.h>
+#include <drivers/include/uart.h>
 
 void halt(void);
 
@@ -23,7 +23,7 @@ static void myoutput(void *arg, char *s, int l)
     if ((l==1) && (s[0] == '\0')) return;
 
     for (i=0; i< l; i++) {
-        uart_send_kern(s[i]);
+        uart_send(s[i]);
     }
 }
 

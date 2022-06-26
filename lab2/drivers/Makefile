@@ -1,9 +1,12 @@
-INCLUDES := -I../include
+INCLUDES := -I../include -I./include
+
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $<
 
 .PHONY: clean
-all: uart.o
+
+all: uart.o mbox.o
+
 clean:
 	rm -rf *~ *.o
 

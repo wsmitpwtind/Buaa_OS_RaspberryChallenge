@@ -56,14 +56,31 @@ lp_Print(void (*output)(void *, char *, int),
 
     int length;
 
+    char r[8];
+    r[0] = '\r';
+    r[1] = '\0';
+    //char r2[19] = "abc";
+
     for (;;) {
         {
             /* scan for the next '%' */
             char *fmtStart = fmt;
 
+	    
             while ( (*fmt != '\0') && (*fmt != '%')) {
-                fmt ++;
+		if (*fmt == '\n') {
+			OUTPUT(arg,fmtStart,fmt - fmtStart);
+			fmtStart = fmt;
+			fmt++;
+			OUTPUT(arg,r,1);
+		} else {
+			fmt++;
+		}
             }
+	    
+	    /*while ( (*fmt != '\0') && (*fmt != '%')) {
+		    fmt++;
+	    }*/
 
             /* flush the string found so far */
             OUTPUT(arg, fmtStart, fmt - fmtStart);
@@ -238,17 +255,30 @@ PrintChar(char *buf, char c, int length, int ladjust)
         length = 1;
     }
 
-    if (ladjust) {
-        *buf = c;
+    if (c == '\n') {
+	length++;
+	}
 
-        for (i = 1; i < length; i++) {
-            buf[i] = ' ';
-        }
+    if (ladjust) {
+	if (c == '\n') {
+		buf[0] = '\r';
+		buf[1] = '\n';
+		for (i = 2;i < length;i++) {
+			buf[i] = ' ';
+		}
+	} else {
+        	*buf = c;
+		for (i = 1;i < length;i++) {
+			buf[i] = ' ';
+		}
+	}
     } else {
         for (i = 0; i < length - 1; i++) {
             buf[i] = ' ';
         }
-
+	if (c == '\n') {
+		buf[length-2] = '\r';
+	}
         buf[length - 1] = c;
     }
 
