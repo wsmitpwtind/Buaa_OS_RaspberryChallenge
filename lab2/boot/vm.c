@@ -73,6 +73,7 @@ int mbox_call(unsigned char ch) {
     }
 }
 
+
 void uart_init() {
 #define UART0_IBRD      ((volatile u_int*)(0x3F201024))
 #define UART0_FBRD      ((volatile u_int*)(0x3F201028))
