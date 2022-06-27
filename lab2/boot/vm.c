@@ -1,4 +1,5 @@
 #include <mmu.h>
+//#include <stdio.h>
 
 u_long freemem;
 
@@ -148,16 +149,23 @@ void uart_hex(unsigned int d) {
 
 void vm_init() {
     uart_init();
-    Pde *pgdir;
-    freemem = KERNEL_PGDIR_PA;
-    pgdir = boot_alloc(BY2PG, BY2PG, 1);
+    //Pde *pgdir;
+    //freemem = KERNEL_PGDIR_PA;
+    //pgdir = boot_alloc(BY2PG, BY2PG, 1);
 
     // 0x00000000 - 0x3F000000 Normal memory
-    boot_map_segment(pgdir, 0, MAXPA, 0, PTE_NORMAL | PTE_INNER_SHARE);
+    //boot_map_segment(pgdir, 0, MAXPA, 0, PTE_NORMAL | PTE_INNER_SHARE);
     // 0x3F000000 - 0x40000000 Device I/O
-    boot_map_segment(pgdir, MAXPA, 0x01000000, MAXPA, PTE_DEVICE | PTE_OUTER_SHARE);
+    //boot_map_segment(pgdir, MAXPA, 0x01000000, MAXPA, PTE_DEVICE | PTE_OUTER_SHARE);
 
+    static char x='a';
+    x ++;
+    char y[10];
+    y[1] = 0;
+    y[0] = x;
+    //uart_puts(y);
+    //uart_puts("\n");
     uart_puts("uart_init ok!\n");
-    uart_puts("boot_map_segment ok!\n");
+    //uart_puts("boot_map_segment ok!\n");
 }
 

@@ -3,6 +3,7 @@
 
 void main() {
     uart_init();
+    uart_puts("shitOS");
     printf("System started!\n");
     printf("This is lab1 for kezhang, xingyang huang, zichuan zheng\n");
     int test = 3;
